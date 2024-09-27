@@ -227,7 +227,7 @@ Widget movieGridScroll(context, movies, bloc, {bool remove = false}) {
                             builder: (context) =>
                                 DetailPage(movie: movies[index])));
                   },
-                  child: movieImage(context, movies[index], 200.0, 140.0, bloc,
+                  child: movieImage(context, movies[index], 200.0, 130.0, bloc,
                       remove: remove)),
               const SizedBox(height: 10),
               movieDesc(context, movies[index], 200.0)

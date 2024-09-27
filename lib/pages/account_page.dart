@@ -125,7 +125,8 @@ class _AccountPageState extends State<AccountPage> {
                           backgroundColor:
                               MaterialStateProperty.all(Colors.cyan.shade600)),
                       onPressed: () {
-                        context.read<AuthBloc>().add(SignOutRequested());
+                        BlocProvider.of<AuthBloc>(context)
+                            .add(SignOutRequested());
                       },
                       icon: const Icon(Icons.logout, color: Colors.white),
                       label: const Text('Log out')),
